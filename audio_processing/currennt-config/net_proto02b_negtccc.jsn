@@ -1,0 +1,32 @@
+{
+    "layers": [
+        {
+            "size": 1,
+            "name": "input",
+            "type": "input"
+        },
+        {
+            "size": 100,
+            "name": "lstm_level_0",
+            "bias": 1.0,
+            "type": "blstm"
+        },
+        {
+            "size": 40,
+            "name": "lstm_level_1",
+            "bias": 1.0,
+            "type": "lstm"
+        },
+        {
+            "size": 1,
+            "name": "output",
+            "bias": 1.0,
+            "type": "feedforward_identity"
+        },
+        {
+            "size": 1,
+            "name": "postoutput",
+            "type": "neg_total_ccc"
+        }
+    ]
+}
